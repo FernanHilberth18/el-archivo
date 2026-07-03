@@ -15,11 +15,9 @@ services:
       - key: ADMIN_PASSWORD
         sync: false
       - key: SESSION_SECRET
-        sync: false
+        generateValue: true
       - key: COOKIE_SECURE
         value: "1"
-      - key: TMDB_API_KEY
-        sync: false
 
 databases:
   - name: el-archivo-db
